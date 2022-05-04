@@ -23,13 +23,3 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p class="intro">This website was deployed with Terraform configuration files from Terraform Cloud. For more information on how HashiCorp products can help with application delivery, watch the below video or click <a href="https://www.hashicorp.com/resources/application-delivery-hashicorp">here</a>. </p>
 <iframe width="985" height="554" src="https://www.youtube.com/embed/wyRtz_tdJes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </article>
-EOF
-
-sudo apt  --assume-yes install nginx
-sudo apt  --assume-yes install git
-sudo ufw allow 'Nginx HTTP'
-#sudo systemctl start nginx
-sudo systemctl enable nginx
-sudo systemctl status nginx
-# sudo cp /usr/share/nginx/html/index.html /usr/share/nginx/html/index.original.html  
-sudo cat $FILE > /var/www/html/index.html
